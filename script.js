@@ -90,12 +90,48 @@ const questions = [
         ]
     }, 
     {
-        question: 'What is a coronavirus?',
+        question: 'What disease does the recently discovered coronavirus cause?',
         answers: [
-            { text: 'Coronaviruses are a large family of viruses which may cause illness in animals or humans.', correct: true},
-            { text: 'Coronaviruses are a small family of bacteria which may cause illness in animals or humans.', correct: false},
-            { text: 'Coronaviruses are a small family of viruses which may cause illness in animals', correct: false},
-            { text: 'Coronaviruses are a large family of viruses which may cause illness in humans.', correct: false}
+            { text: 'The most recently discovered coronavirus does not cause coronavirus disease COVID-19.', correct: false},
+            { text: 'The most recently discovered coronavirus causes coronavirus disease COVID-19.', correct: true},
+            { text: 'The most recently discovered coronavirus causes coronavirus disease COVID.', correct: false},
+            { text: 'The most recently discovered coronavirus causes coronavirus disease COVID-18.', correct: false}
+        ]
+    }, 
+    {
+        question: 'What is COVID-19?',
+        answers: [
+            { text: 'COVID-19 is the infectious disease caused by the most recently discovered coronavirus.', correct: true},
+            { text: 'COVID-19 is the infectious disease caused by the most recently discovered corticovirus.', correct: false},
+            { text: 'COVID-19 is the infectious disease caused by the most recently discovered circovirus.', correct: false},
+            { text: 'COVID-19 is the infectious disease caused by the most recently discovered cystovirus.', correct: false}
+        ]
+    }, 
+    {
+        question: 'Where did the COVID-19 outbreak begin?',
+        answers: [
+            { text: 'The outbreak began in Italy, in December 2019.', correct: false},
+            { text: 'The outbreak began in the United States, in December 2019.', correct: false},
+            { text: 'The outbreak began in France, in December 2019.', correct: false},
+            { text: 'The outbreak began in China, in December 2019.', correct: true}
+        ]
+    },
+    {
+        question: 'What are the symptoms of COVID-19?',
+        answers: [
+            { text: 'The most common symptoms of COVID-19 are muscle pain, and dry cough.', correct: false},
+            { text: 'The most common symptoms of COVID-19 are fever, stomach ache, and wet cough.', correct: false},
+            { text: 'The most common symptoms of COVID-19 are fever, tiredness, and dry cough.', correct: true},
+            { text: 'The most common symptoms of COVID-19 are fever, tiredness.', correct: false},
+        ]
+    },
+    {
+        question: 'How does COVID-19 spread?',
+        answers: [
+            { text: 'The disease can spread from person to person through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.', correct: true},
+            { text: 'The disease can spread from animals to persons through small droplets from the nose or mouth which are spread when an animal with COVID-19 coughs or exhales.', correct: false},
+            { text: 'The disease can spread from person to person through blood.', correct: false},
+            { text: 'The disease can spread from person to person through sexual intercourse.', correct: false},
         ]
     }
 ]
