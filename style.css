@@ -30,3 +30,56 @@ body.wrong {
     --hue: var(--hue-wrong);
     background-color: hsl(var(--hue), 100%, 69%);
 }
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: gainsboro;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 1px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 4px;
+    margin: 12px 0;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 25%, 40%);
+    background-color: hsl(var(--hue), 25%, 50%);
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: gainsboro;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 8px 4px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .hide {
+    display: none;
+} */
