@@ -1,5 +1,6 @@
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
+const welcomeHeader = document.getElementById('Welcome')
 const questionElementContainer = document.getElementById('question-container')
 
 startButton.addEventListener('click', startGame)
@@ -16,6 +17,7 @@ let shuffledQuestion, currentQuestionIndex, correctAnswers
 function startGame(){
     console.log("Quiz started")
     startButton.classList.add('hide')
+    welcomeHeader.classList.add('hide')
     shuffledQuestion = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     correctAnswers = 0

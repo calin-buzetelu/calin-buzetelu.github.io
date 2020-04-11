@@ -34,15 +34,16 @@ body.wrong {
 .container {
     width: 800px;
     max-width: 80%;
-    background-color: gainsboro;
-    border-radius: 2px;
-    box-shadow: 0 0 4px 1px;
+    /* background-color: gainsboro; */
+    /* border-radius: 2px; */
+    /* box-shadow: 0 0 4px 1px; */
 }
 
 .btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 4px;
+    display: block;
+    /* grid-template-columns: repeat(2, auto); */
+    grid-template-columns: max-content;
+    gap: 200px;
     margin: 12px 0;
 }
 
